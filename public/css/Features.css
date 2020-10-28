@@ -1,0 +1,104 @@
+body{
+    margin:0;
+    padding: 0;
+    background-color: #1e1e1e;
+    overflow-x: hidden;
+}
+.content{
+    width: 50%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    top:30vh;
+    color:white;
+    font-family: roboto;
+    margin-bottom: 50vh;
+}
+.content .title{
+    font-family: roboto;
+    margin-top: 5vh;
+    text-align: center;
+    position: relative;
+    left:50%;
+    transform: translateY(5vh) translateX(-50%);
+    font-size: 3em;
+    margin-bottom: 1.5vh;
+    opacity: 0;
+
+}
+.titlehr{
+    opacity: 0;
+    width: 20%;
+    height: 1vh;
+    background-color: #989CD7;
+    border:0;
+}
+.para{
+    opacity: 0;
+
+    margin-top: 6vh;
+    width: 65%;
+    font-size: 1em;
+    position: relative;
+    left:50%;
+    transform: translateY(5vh) translateX(-50%);
+    text-align: center;
+    font-weight: 300;
+}
+.features{
+    margin-top: 20vh;
+}
+.features .ftitle{
+    font-size: 1.7em;
+    float: left;
+}
+span {
+    border-bottom: 1vh solid #989CD7;
+    padding: 0 0 1.5vh;
+}
+.features img{
+    width: 95%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%) scaleX(0);
+    margin-top: 10vh;
+    border-radius: 10px;
+}
+.desc{
+    width: 97%;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+@keyframes fadeup{
+    from{
+        opacity: 0;
+        transform: translateY(5vh) translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0vh) translateX(-50%);
+    }
+}
+
+@keyframes fadeup2{
+    from{
+        opacity: 0;
+        transform: translateY(5vh);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0vh);
+    }
+}
+@keyframes width{
+    from{
+        transform: translateX(-50%) scaleX(0);
+    }
+    to{
+        transform: translateX(-50%) scaleX(1);
+    }
+}

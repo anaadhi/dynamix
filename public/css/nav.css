@@ -1,0 +1,67 @@
+.nav{
+    width: 75vw;
+    height: 14vh;
+    position: absolute;
+    top:0;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    font-family: roboto;
+}
+.nav .logo{
+    float: left;
+    height: 2.5em;
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.nav .navlinks{
+    margin-top: 0;
+    float: right;
+    position: relative;
+    top:50%;
+    left:2em;
+    transform: translateY(-50%);
+}
+.nav .navlinks li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 4em;
+
+}
+.nav .navlinks li a{
+    position: relative;
+    font-size: 1.1em;
+    text-decoration: none;
+    color:white;
+
+}
+.nav .navlinks li a:hover span{
+    width: 2em;
+    transition: 0.4s;
+}
+.nav .navlinks li a span{
+    border-bottom: 4px solid #989CD7;
+    padding: 0 0 10px;
+    width: 0%;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    transition: 0.2s;
+}
+.nav .navlinks li a hr{
+    position: absolute;
+    bottom: -12px;
+    left:0%;
+    width: 100%;
+}
+@media only screen and (min-width: 1600px) {
+    .nav .navlinks li a{
+        font-size: 1.6em;
+    }
+    .nav .navlinks li{
+    margin-left: 5em;
+    }
+}
